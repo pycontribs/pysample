@@ -10,6 +10,7 @@ except:
 class test_0(unittest.TestCase):
 
     def test_success(self):
+        a = 1
         pass
 
 if __name__ == "__main__":
