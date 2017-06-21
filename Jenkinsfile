@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'master'
+    }
+    
+  }
   stages {
     stage('lint') {
       steps {
