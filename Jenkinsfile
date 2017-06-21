@@ -26,4 +26,7 @@ pipeline {
       }
     }
   }
+  environment {
+    TERM = 'dumb'
+  }
 }
