@@ -22,7 +22,16 @@ pipeline {
     }
     stage('publish') {
       steps {
-        echo 'Hurrah!'
+        parallel(
+          "publish": {
+            echo 'Hurrah!'
+            
+          },
+          "cleanup": {
+            echo 'cleaning ....'
+            
+          }
+        )
       }
     }
   }
